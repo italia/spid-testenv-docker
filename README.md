@@ -9,9 +9,7 @@ L'ambiente si compone di due elementi:
 
 ## Docker
 
-```
 Installazione `docker` e `docker-compose` su qualsiasi sistema
-```
 
 ### Utilizzo del container
 
