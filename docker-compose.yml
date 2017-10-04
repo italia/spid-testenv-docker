@@ -1,12 +1,12 @@
 version: '2'
 
 services:
-  identityserver:
+  spid-testenv-identityserver:
     build: identity-server/
     ports:
       - "9443:9443"
 
-  backoffice:
+  spid-testenv-backoffice:
     build: backoffice/
     ports:
       - "8080:8080"
@@ -16,4 +16,4 @@ services:
       - NODE_ENV=development
       - NODE_TLS_REJECT_UNAUTHORIZED=0
     depends_on:
-      - identityserver
+      - spid-testenv-identityserver
