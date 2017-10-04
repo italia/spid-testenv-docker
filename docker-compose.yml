@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+
+  identityserver:
+    build: identity-server/
+    container_name: spid-testenv-identityserver
+    ports:
+      - "9443:9443"
+    networks:
+      - spid-testenv-network
+    environment:
+      IDENTITY_SERVER_HOST: localhost
+
+  backoffice:
+    build: backoffice/
+    container_name: spid-testenv-backoffice
+    ports:
+      - "8080:8080"
+    networks:
+      - spid-testenv-network
+    depends_on:
+      - identityserver
+
+networks:
+
+  spid-testenv-network:
+      driver: bridge
