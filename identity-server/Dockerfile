@@ -1,2 +1,2 @@
 # https://github.com/italia/spid-testenv-identityserver
-FROM italia/spid-testenv-identityserver:latest
+FROM italia/spid-testenv-identityserver:docker-compose
