@@ -10,7 +10,7 @@ L'ambiente si compone di due elementi:
 ## Docker
 
 ```
-Installazione docker e docker-compose su qualsiasi sistema
+Installazione `docker` e `docker-compose` su qualsiasi sistema
 ```
 
 ### Utilizzo del container
@@ -21,7 +21,7 @@ Avvio con `docker-compose` (non in background):
 $ docker-compose up
 ```
 
-Avvio in background con docker compose (modalità detached):
+Avvio in background con `docker-compose` (modalità detached):
 
 ```bash
 $ docker-compose up -d
