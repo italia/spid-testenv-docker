@@ -10,14 +10,21 @@ L'ambiente si compone di due elementi:
 ## Docker
 
 ```
-Installazione docker su qualsiasi sistema
+Installazione docker e docker-compose su qualsiasi sistema
 ```
 
 ### Utilizzo del container
 
+Avvio con `docker-compose` (non in background):
+
+```bash
+$ docker-compose up
 ```
-docker pull italia/spid-test-environment
-docker run -d --name spid-test-environment -p 9443:9443 -p 8080:8080 spid-test-environment
+
+Avvio in background con docker compose (modalità detached):
+
+```bash
+$ docker-compose up -d
 ```
 
 ## Disponibilità del servizio
