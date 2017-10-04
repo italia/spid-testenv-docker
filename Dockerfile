@@ -30,7 +30,7 @@ RUN apt-get install -y curl && \
 
 # Identity Server
 RUN mkdir /spid-testenvironment && \
-    curl -o /spid-testenvironment/spid-testenv-identityserver.tar.gz https://codeload.github.com/italia/spid-testenv-identityserver/tar.gz/v0.9-beta.1 && \
+    curl -o /spid-testenvironment/spid-testenv-identityserver.tar.gz https://github.com/italia/spid-testenv-identityserver/archive/master.tar.gz && \
     mkdir /spid-testenvironment/is && \
     tar -zxvf /spid-testenvironment/spid-testenv-identityserver.tar.gz -C /spid-testenvironment/is --strip-components=1 && \
     rm -f /spid-testenvironment/spid-testenv-identityserver.tar.gz
@@ -42,7 +42,7 @@ RUN mv /spid-testenvironment/is/spid-confs/conf/conf/carbon.xml /spid-testenviro
 
 # Backoffice
 RUN mkdir /spid-testenvironment && \
-    curl -o /spid-testenvironment/spid-testenv-backoffice.tar.gz https://codeload.github.com/italia/spid-testenv-backoffice/tar.gz/v0.9-beta.1 && \
+    curl -o /spid-testenvironment/spid-testenv-backoffice.tar.gz https://github.com/italia/spid-testenv-backoffice/archive/master.tar.gz && \
     mkdir /spid-testenvironment/bo && \
     tar -zxvf /spid-testenvironment/spid-testenv-backoffice.tar.gz -C /spid-testenvironment/bo --strip-components=1 && \
     rm -f /spid-testenvironment/spid-testenv-backoffice.tar.gz
