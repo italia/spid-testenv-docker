@@ -14,5 +14,6 @@ services:
       - ./config.js:/spid-testenvironment/bo/backoffice/server/wso2/config.js
     environment:
       - NODE_ENV=development
+      - NODE_TLS_REJECT_UNAUTHORIZED=0
     depends_on:
       - identityserver
