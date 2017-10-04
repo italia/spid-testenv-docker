@@ -25,10 +25,21 @@ Avvio in background con `docker-compose` (modalità detached):
 $ docker-compose up -d
 ```
 
+## Utilizzo dei container su OSX con docker-machine (non docker for mac)
+
+La docker-machine standard non prevede un mapping automatico delle porte dall'host locale verso la docker-machine.
+Si possono usare diverse tecniche, una delle quali è la seguende:
+
+```
+docker-machine ssh default -L 9443:localhost:9443
+```
+
+In questo modo viene creato un ssh port-forward dalla vm verso localhost, quindi sarà possibile accedere a `https://localhost:9443
+
 ## Disponibilità del servizio
 
 L'avvio può richiedere anche qualche minuto.
-L'interfaccia di amministrazione dell'identity server sarà disponibile in https://localhost:9443/ (utente: admin, password: admin) 
+L'interfaccia di amministrazione dell'identity server sarà disponibile in https://localhost:9443/ (utente: admin, password: admin)
 ma **non è necessario** aprirla poiché le attività di configurazione saranno disponibili su https://localhost:8080 (backoffice ad accesso libero)
 
 ## Backoffice
