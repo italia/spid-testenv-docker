@@ -58,6 +58,10 @@ Il primo passo è quello di configurare il proprio Service Provider nell'ambient
 Dopo aver aperto il backoffice e riempito il form in tutte le sue parti è possibile vedere sulla destra l'anteprima dei metadati XML/SAML che descrivono il Service Provider. Si consiglia di scaricare il file XML prima di inviare il form poiché servirà anche nella configurazione del proprio Service Provider. Premendo il tasto "Salva" il Service Provider viene creato in WSO2-is.
 È possibile eseguire successive modifiche ad un Service Provider esistente inviando nuovamente il modulo con l'entity ID e il nome invariati.
 
+#### Nota importante per MacOS X
+
+A causa di un bug di WSO2-is su MacOS X, per la creazione di un Service Provider è necessario seguire [il workaround qui descritto](https://github.com/italia/spid-testenv/issues/1#issuecomment-334537881).
+
 ### Creazione delle identità (utenti)
 
 Per ciascun Service Provider configurato si può accedere alla lista degli utenti ed è possibile crearne di nuovi.
