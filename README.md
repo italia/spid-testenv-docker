@@ -9,7 +9,15 @@ L'ambiente si compone di due elementi:
 
 ## Docker
 
-Installazione `docker` e `docker-compose` su qualsiasi sistema
+Installazione `docker` e `docker-compose` su qualsiasi sistema (su Mac si può usare Docker for Mac).
+
+### Configurazione alias
+
+```
+echo "127.0.0.1 spid-testenv-identityserver" | sudo tee -a /etc/hosts
+```
+
+Su Windows questo alias si può configurare in `%windir%\System32\drivers\etc\HOSTS`.
 
 ### Utilizzo del container
 
@@ -25,7 +33,7 @@ Avvio in background con `docker-compose` (modalità detached):
 $ docker-compose up -d
 ```
 
-## Utilizzo dei container su OSX con docker-machine (non docker for mac)
+### Utilizzo dei container su OSX con docker-machine (non Docker for Mac)
 
 La docker-machine standard non prevede un mapping automatico delle porte dall'host locale verso la docker-machine.
 Si possono usare diverse tecniche, una delle quali è la seguende:
@@ -34,15 +42,15 @@ Si possono usare diverse tecniche, una delle quali è la seguende:
 docker-machine ssh default -L 9443:localhost:9443
 ```
 
-In questo modo viene creato un ssh port-forward dalla vm verso localhost, quindi sarà possibile accedere a `https://localhost:9443
+In questo modo viene creato un ssh port-forward dalla vm verso localhost, quindi sarà possibile accedere a `https://localhost:9443`
 
-## Disponibilità del servizio
+### Disponibilità del servizio
 
 L'avvio può richiedere anche qualche minuto.
 L'interfaccia di amministrazione dell'identity server sarà disponibile in https://localhost:9443/ (utente: admin, password: admin)
-ma **non è necessario** aprirla poiché le attività di configurazione saranno disponibili su https://localhost:8080 (backoffice ad accesso libero)
+ma **non è necessario** aprirla poiché le attività di configurazione saranno disponibili su https://localhost:8080 (backoffice ad accesso libero).
 
-## Backoffice
+## Uso del backoffice
 
 ### Configurazione di un Service Provider
 
