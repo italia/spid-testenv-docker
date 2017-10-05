@@ -2,11 +2,13 @@ version: '2'
 
 services:
   spid-testenv-identityserver:
+    container_name: spid-testenv-identityserver
     build: identity-server/
     ports:
       - "9443:9443"
 
   spid-testenv-backoffice:
+    container_name: spid-testenv-backoffice
     build: backoffice/
     ports:
       - "8080:8080"
