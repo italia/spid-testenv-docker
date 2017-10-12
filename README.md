@@ -9,7 +9,7 @@ L'ambiente si compone di due elementi:
 
 ## Docker
 
-Installazione `docker` e `docker-compose` su qualsiasi sistema (su Mac si può usare Docker for Mac).
+Installazione `docker` e `docker-compose` su qualsiasi sistema (su Mac si può usare Docker for Mac), anche per windows è possibile utilizzare il docker facendo attenzione e permettendo le cartelle condivise.
 
 ### Configurazione alias
 
