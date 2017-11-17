@@ -1,5 +1,6 @@
-FROM ubuntu:latest
-MAINTAINER Umberto Rosini, rosini@agid.gov.it
+FROM debian:stable-slim
+
+LABEL maintainer="Umberto Rosini <rosini@agid.gov.it>"
 
 ENV JAVA_HOME="/usr/lib/jvm/java-8-oracle"
 
