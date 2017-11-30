@@ -1,5 +1,7 @@
 # SPID TEST ENVIRONMENT
 
+[![](https://images.microbadger.com/badges/version/italia/spid-testenv-backoffice.svg)](https://microbadger.com/images/italia/spid-testenv-backoffice "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/italia/spid-testenv-backoffice.svg)](https://microbadger.com/images/italia/spid-testenv-backoffice "Get your own image badge on microbadger.com")
+
 SPID Test Environment è rivolto ai Service Provider che vogliono testare la propria integrazione con SPID senza avere a disposizione identità SPID reali.
 Consiste in un Identity Provider da far girare in locale o su un proprio server, in cui si possono liberamente configurare delle identità di test.
 
