@@ -1,3 +1,5 @@
+> ⚠️ Questo repository è **deprecato**. È ora disponibile il nuovo IdP di test: https://github.com/italia/spid-testenv2
+
 # SPID TEST ENVIRONMENT
 
 [![](https://images.microbadger.com/badges/version/italia/spid-testenv-backoffice.svg)](https://microbadger.com/images/italia/spid-testenv-backoffice "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/italia/spid-testenv-backoffice.svg)](https://microbadger.com/images/italia/spid-testenv-backoffice "Get your own image badge on microbadger.com") [![](https://img.shields.io/github/issues/italia/spid-testenv.svg)](https://github.com/italia/spid-testenv/issues "Issue tracker")
